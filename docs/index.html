@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreehitha Peddoju - AI/ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <div class="nav-left">
+                <a href="index.html" class="logo">*¿*</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="src/pages/work.html">Experience</a></li>
+                    <li><a href="src/pages/photography.html">Photography</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shreehithapeddoju/" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/shreehitha" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/funnisocks" target="_blank" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:shreehitha.p@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="section home-hero">
+            <div class="section-content">
+                <div class="hero-layout">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span>Shreehitha Peddoju</span></h1>
+                        <p class="subtitle">AI/ML Developer | Photographer</p>
+                        <p class="description">
+                            I build AI systems. I also like to create art.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn btn-primary" id="view-work-btn">View My Work</a>
+                            <a href="mailto:shreehitha.p@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-portrait" aria-hidden="true">
+                        <canvas id="portrait-canvas" data-image="src/images2/silhouette.png"></canvas>
+                        <div class="portrait-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section">
+            <div class="section-content">
+            </div>
+        </section>
+    </main>
+
+    <!-- Work Choices Modal -->
+    <div id="work-modal" class="work-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h3>Choose what you'd like to explore:</h3>
+            <div class="modal-choices">
+                <a href="src/pages/work.html" class="choice-card tech-projects">
+                    <div class="choice-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Tech Projects</h4>
+                    <p>Explore my professional experience, AI/ML projects, and technical work</p>
+                </a>
+                <a href="src/pages/photography.html" class="choice-card photography">
+                    <div class="choice-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>Photography</h4>
+                    <p>View my photography portfolio and visual storytelling</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/particles.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/portrait_particles.js"></script>
+</body>
+</html>
